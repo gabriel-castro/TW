@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Dots and Boxes!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	
+</head>
+<body>
+	<div class="header">
+
+		<a onClick="window.location.reload()"><h1 class ="header">Dots and Boxes</h1></a>
+	</div>
+	<div id="pagina" >
+
+		<div class="login" id="login">
+			<form action="#" class="login">
+				Utilizador:  <br>
+				<input type="text" value="" id="user">
+				<br>
+				Palavra-chave:<br>
+				<input type="password" value="" id="pw">
+				<br><br>
+				<button onclick="registar()" class="dropbtn" id="blogin">Login</button>
+				<button onclick="hide_login()" class="dropbtn" id="boffline">Jogar Offline</button>
+			</form>
+		</div>
+
+
+
+		<div class="juntar" id="juntar">
+			<div class="indiv">
+				<div class="dropdown">
+					<button onclick="dd2click()" class="dropbtn" id="botao_jgr">Jogar</button>
+					<div id="myDropdown2" class="dropdown-content">
+						<a href="#" onclick="table(2,3, 'Beginner (2x3)')" > Beginer (2X3) </a>
+						<a href="#" onclick="table(4,5, 'Intermediate (4x5)')"> Intermediate (4X5) </a>
+						<a href="#" onclick="table(6,8, 'Advanced (6x8)')"> Advanced (6X8) </a>
+						<a href="#" onclick="table(9,11, 'Expert (9x11)')">Expert (9X11) </a>
+					</div>
+					<button onclick="restart()" class="dropbtn" id="breset">Restart</button>
+					<button onclick="sair()" class="dropbtn" id="bsair">Sair</button>
+					<button onclick="top10()" class="dropbtn" id="btop">Mostrar top 10</button>
+				</div>
+			</div>
+
+		</div><!--juntar-->
+
+
+
+
+		<div class="top" id="top">
+			<button onclick="hide_login()" class="dropbtn" id="bvoltar"> Voltar </button>
+		<p></p>
+			<div class="indiv" >
+				TOP 10:
+				Begginer
+				<ol type="1" id="list1">
+				</ol>
+				Intermediate
+				<ol type="1" id="list2">
+				</ol>
+				Advanced
+				<ol type="1" id="list3">
+				</ol>
+				Expert
+				<ol type="1" id="list4">
+				</ol>
+
+			</div>
+
+		</div><!-- top10 -->
+
+
+		<p id="wait">A esperar por um oponente! <br>  <canvas id="loadingCanvas" ></canvas></p>
+
+		<div class="jogo" id="jogo">
+			<div class="indiv" id="temporizador">
+			<TABLE class="tab">
+			<CAPTION>SCORE</CAPTION>
+				<TR>
+					<TH>  <TD id="ply1">Convidado <TD id="ply2">Computador
+							<TR id="row2">
+					<TH>Temporizador <TD id="tempo_jg1">0  <TD id="tempo_jg2">0
+				<TR>
+					<TH>Pontuação <TD id="score_jg1">0 <TD id="score_jg2">0
+			</TABLE>
+			</div>
+			<table id="game">
+			</table>
+			
+		</div><!-- jogo -->
+	</div>
+	<div id="canbas"> <canvas id="progressCanvas" ></canvas> </div>
+<div id="texto"> </div>
+</body>
+</html>

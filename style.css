@@ -1,0 +1,185 @@
+a { cursor: pointer; }
+img { cursor: pointer; }
+
+head {
+  color: gray;
+    font-weight: bold;
+}
+
+ol{
+	text-align: center;
+	list-style-position: inside;
+}
+
+body {
+
+  background-color: #333333;
+  color: gray;
+    font-weight: bold;
+}
+
+p{
+	text-align: center;
+}
+
+.header{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+.esq{
+  float:left;
+}
+
+.login{
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.top{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.juntar{
+  width: 100%;
+  margin: auto;
+  float: left;
+  text-align: center;
+}
+
+
+.indiv {
+  margin: auto;
+  text-align: center;
+}
+
+.jogo{
+  text-align: center;
+  width: 100%;
+}
+
+.wait loadingCanvas{
+  width: 200px;
+  height: 100px;
+}
+
+#canbas{
+width: 100px;
+height: 100px;
+margin: 0px auto;
+
+}
+
+img{
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+tab{
+  text-align: center; margin: 1em auto;
+  border: 1px solid gray;
+}
+
+
+.cell{
+  width: 50px;
+  height: 50px;
+}
+
+.border{
+  background-color: white;
+}
+
+.edge{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+}
+
+table{ text-align: center; margin: 1em auto; }
+
+
+#bsair{
+  background-image: url(exit.png);
+}
+
+#boffline{
+  background-image: url(offline.png);
+}
+
+#blogin{
+  background-image: url(online.png);
+}
+
+#botao_jgr{
+  background-image: url(play.png);
+}
+
+#breset{
+  background-image: url(reset2.png);
+}
+#btop{
+  background-image: url(top.png);
+}
+
+#bvoltar{
+  background-image: url(back.png);
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #DFDFDE;
+  color: black;
+  font-weight: bold;
+  padding: 16px 16px 16px 55px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #BDBDBD;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
